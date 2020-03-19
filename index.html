@@ -159,6 +159,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Concept" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/18/Concept/">Concept</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/18/Concept/" class="archive-article-date">
+  	<time datetime="2020-03-19T04:01:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Concept"><a href="#Concept" class="headerlink" title="Concept"></a>Concept</h1><h2 id="Difference-between-stack-and-heap"><a href="#Difference-between-stack-and-heap" class="headerlink" title="Difference between stack and heap"></a>Difference between stack and heap</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">heap -&gt; p2 = (<span class="keyword">char</span>*)<span class="built_in">malloc</span>(<span class="number">10</span>);</span><br><span class="line"><span class="built_in">stack</span> -&gt; <span class="keyword">int</span> a ;</span><br></pre></td></tr></table></figure>
+
+<p>Stack is used for static memory allocation and Heap for dynamic memory allocation, both stored in the computer’s RAM .</p>
+<p>Variables allocated on the <strong>stack</strong> are stored directly to the memory and access to this memory is very fast, and it’s allocation is dealt with when the program is compiled. When a function or a method calls another function which in turns calls another function etc., the execution of all those functions remains suspended until the very last function returns its value. The stack is always reserved in a LIFO (last-in-first-out) order, the most recently reserved block is always the next block to be freed. This makes it really simple to keep track of the stack, freeing a block from the stack is nothing more than adjusting one pointer.</p>
+<p>Variables allocated on the <strong>heap</strong> have their memory allocated at run time and accessing this memory is a bit slower, but the heap size is only limited by the size of virtual memory . Element of the heap have no dependencies with each other and can always be accessed randomly at any time. You can allocate a block at any time and free it at any time. This makes it much more complex to keep track of which parts of the heap are allocated or free at any given time.</p>
+<p>You can use the stack if you know exactly how much data you need to allocate before compile time and it is not too big. You can use heap if you don’t know exactly how much data you will need at runtime or if you need to allocate a lot of data.</p>
+<p>In a multi-threaded situation each thread will have its own completely independent stack but they will share the heap. Stack is thread specific and Heap is application specific. The stack is important to consider in exception handling and thread executions.</p>
+<p><a href="https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html" target="_blank" rel="noopener">Memory : Stack vs Heap</a></p>
+<h2 id="Difference-between-process-and-thread"><a href="#Difference-between-process-and-thread" class="headerlink" title="Difference between process and thread"></a>Difference between process and thread</h2><p><strong><a href="https://www.geeksforgeeks.org/gate-notes-operating-system-process-management-introduction/" target="_blank" rel="noopener">Process</a>:</strong><br>Process means any program is in execution. Process control block controls the operation of any process. Process control block contains the information about processes for example: Process priority, process id, process state, CPU, register etc. A process can creates other processes which are known as <strong>Child Processes</strong>. Process takes more time to terminate and it is isolated means it does not share memory with any other process.</p>
+<p><strong><a href="https://www.geeksforgeeks.org/operarting-system-thread/" target="_blank" rel="noopener">Thread</a>:</strong><br>Thread is the segment of a process means a process can have multiple threads and these multiple threads are contained within a process. A thread have 3 states: running, ready, and blocked.</p>
+<p>Thread takes less time to terminate as compared to process and like process threads do not isolate.</p>
+<p><img src="C:%5CUsers%5CERICL%5COneDrive%5CDesktop%5C1584591547(1).jpg" alt="pic1"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/18/Concept/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Difference-between-StringBuilder-and-string" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
