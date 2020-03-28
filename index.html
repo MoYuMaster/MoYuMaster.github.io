@@ -186,6 +186,8 @@
 <p>对某些特殊字符，如果字符(串)正好是正则的一部分，则需要转义才能使用，这些字符有 | , + , * , ^ , $ , / , | , [ , ] , ( , ) , - , . , \ 等.</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String str=<span class="string">"5678|XYZ"</span>;  </span><br><span class="line">String[] b = str.split(<span class="string">"\\|"</span>);  <span class="comment">//注意这里用两个 \\，而不是一个\  </span></span><br><span class="line">System.out.println(<span class="string">"处理结果: "</span>+b[<span class="number">0</span>]+<span class="string">","</span>+b[<span class="number">1</span>]);   <span class="comment">//输出的是: 处理结果: 5678,XYZ</span></span><br></pre></td></tr></table></figure>
 
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">split(String regex, <span class="keyword">int</span> limit)</span><br><span class="line">Splits <span class="keyword">this</span> string around matches of the given regular expression.</span><br></pre></td></tr></table></figure>
+
 
 
 </li>
